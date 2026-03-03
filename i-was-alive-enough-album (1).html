@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Was Alive Enough - Peter Kleinhans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --white: #ffffff; --black: #0a0a0a; --gray-light: #f5f5f5; --gray-mid: #666666; --accent: #2952a3; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Work Sans', sans-serif; background: var(--white); color: var(--black); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 8rem 2rem 4rem; }
+        .album-header { text-align: center; margin-bottom: 4rem; }
+        .album-cover { max-width: 500px; margin: 0 auto 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .album-cover img { width: 100%; height: auto; display: block; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; margin-bottom: 0.5rem; }
+        .album-info { color: var(--gray-mid); font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2rem; }
+        .tracklist { max-width: 700px; margin: 0 auto; }
+        .track { display: flex; align-items: center; padding: 1.5rem; border-bottom: 1px solid var(--gray-light); transition: all 0.3s ease; text-decoration: none; color: var(--black); }
+        .track:hover { background: var(--gray-light); }
+        .track-item:hover .track-title {
+            color: var(--accent);
+        }
+        
+        .track-number { font-size: 0.85rem; color: var(--gray-mid); width: 3rem; }
+        .track-title { flex: 1; font-size: 1.1rem;
+            text-decoration: underline;
+            text-decoration-color: var(--accent);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px; }
+        @media (max-width: 768px) { .container { padding: 6rem 1.5rem 3rem; } h1 { font-size: 2.5rem; } .track-title { font-size: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav style="position: fixed; top: 0; left: 0; right: 0; background: white; z-index: 1000; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f0f0f0;">
+        <div style="font-size: 0.85rem; letter-spacing: 0.15em; font-weight: 600;"><a href="index.html" style="text-decoration: none; color: #0a0a0a;">PETER KLEINHANS</a></div>
+        <ul style="display: flex; gap: 1.5rem; list-style: none;">
+            <li><a href="listen.html" style="text-decoration: none; color: #0a0a0a; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;">Listen</a></li>
+            <li><a href="shows.html" style="text-decoration: none; color: #0a0a0a; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;">Shows</a></li>
+            <li><a href="about.html" style="text-decoration: none; color: #0a0a0a; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;">Story</a></li>
+            <li><a href="press.html" style="text-decoration: none; color: #0a0a0a; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;">Press</a></li>
+            <li><a href="conversations-with-claude.html" style="text-decoration: none; color: #0a0a0a; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;">Blog</a></li>
+            <li><a href="contact.html" style="text-decoration: none; color: #0a0a0a; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="album-header">
+            <div class="album-cover"><img src="images/i-was-alive-enough.jpg" alt="I Was Alive Enough"></div>
+            <h1>I Was Alive Enough</h1>
+            <div class="album-info">2020 · 12 Songs</div>
+        </div>
+        <div class="tracklist">
+            <a href="song-fomo-iwae.html" class="track"><div class="track-number">01</div><div class="track-title">FOMO</div></a>
+            <a href="song-race-to-the-bottom.html" class="track"><div class="track-number">02</div><div class="track-title">Race to the Bottom</div></a>
+            <a href="song-fake-news-iwae.html" class="track"><div class="track-number">03</div><div class="track-title">Fake News</div></a>
+            <a href="song-91st-street-iwae.html" class="track"><div class="track-number">04</div><div class="track-title">91st Street</div></a>
+            <a href="song-our-journeys.html" class="track"><div class="track-number">05</div><div class="track-title">Our Journeys</div></a>
+            <a href="song-homeless.html" class="track"><div class="track-number">06</div><div class="track-title">Homeless</div></a>
+            <a href="song-malagasy-uprising-iwae.html" class="track"><div class="track-number">07</div><div class="track-title">Malagasy Uprising</div></a>
+            <a href="song-beneath-two-moons.html" class="track"><div class="track-number">08</div><div class="track-title">Beneath Two Moons</div></a>
+            <a href="song-new-mexico.html" class="track"><div class="track-number">09</div><div class="track-title">New Mexico</div></a>
+            <a href="song-w1775.html" class="track"><div class="track-number">10</div><div class="track-title">W1775</div></a>
+            <a href="song-table-for-one.html" class="track"><div class="track-number">11</div><div class="track-title">Table For One</div></a>
+            <a href="song-palpitations.html" class="track"><div class="track-number">12</div><div class="track-title">Palpitations</div></a>
+        </div>
+    </div>
+</body>
+</html>
