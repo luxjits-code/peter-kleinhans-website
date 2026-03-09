@@ -22,6 +22,16 @@
         .coming-soon { text-align: center; padding: 4rem 2rem; background: var(--gray-light); border-radius: 8px; margin-top: 3rem; }
         .coming-soon h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--accent); margin-bottom: 1rem; }
         .coming-soon p { font-size: 1rem; color: var(--gray-mid); }
+        .posts { margin-top: 3rem; }
+        .post-preview { padding: 2.5rem 0; border-bottom: 1px solid var(--gray-light); }
+        .post-preview:first-child { padding-top: 0; }
+        .post-preview h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 400; margin-bottom: 0.5rem; }
+        .post-preview h2 a { text-decoration: none; color: var(--black); transition: color 0.3s ease; }
+        .post-preview h2 a:hover { color: var(--accent); }
+        .post-meta { font-size: 0.9rem; color: var(--gray-mid); margin-bottom: 1rem; }
+        .post-excerpt { font-size: 1.05rem; line-height: 1.7; color: var(--gray-mid); margin-bottom: 1rem; }
+        .read-more { color: var(--accent); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+        .read-more:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -46,9 +56,13 @@
             <p style="margin-top: 1.5rem;">From songwriting collaboration to deep discussions about consciousness, art, and the future of human-machine partnership, "Conversations with Claude" captures Peter's fascination with how AI can expand creative possibilities while raising profound questions about what it means to create, to think, and to be human in an age of intelligent machines.</p>
         </div>
 
-        <div class="coming-soon">
-            <h2>First Posts Coming Soon</h2>
-            <p>Peter is currently curating conversations to share. Check back soon for the first installment.</p>
+        <div class="posts">
+            <article class="post-preview">
+                <h2><a href="blog-post-anthropic.html">The Most Toxic Policy Decision</a></h2>
+                <p class="post-meta">March 7, 2026</p>
+                <p class="post-excerpt">Of all of Trump's policy decisions, I don't think there's one I find more toxic than the Anthropic one. A conversation about weaponizing procurement authority, setting dangerous precedents, and why this isn't left or right (it's about whether the government can silence dissent from American companies).</p>
+                <a href="blog-post-anthropic.html" class="read-more">Read the conversation →</a>
+            </article>
         </div>
     </div>
 </body>
