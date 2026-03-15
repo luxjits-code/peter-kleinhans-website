@@ -17,8 +17,29 @@
         nav ul li a:hover { color: var(--accent); }
         .container { max-width: 900px; margin: 0 auto; padding: 8rem 2rem 4rem; }
         h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; margin-bottom: 1rem; text-align: center; }
-        .subtitle { text-align: center; color: var(--gray-mid); font-size: 1.1rem; margin-bottom: 3rem; font-style: italic; }
-        .description { font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; color: var(--gray-mid); }
+        .subtitle { text-align: center; color: var(--gray-mid); font-size: 1.1rem; margin-bottom: 2rem; font-style: italic; }
+        .description { font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--gray-mid); }
+
+        .collab-images {
+            display: flex;
+            gap: 1.5rem;
+            margin: 0 0 3rem;
+            align-items: stretch;
+        }
+
+        .collab-images img {
+            width: 50%;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+            max-height: 300px;
+        }
+
+        @media (max-width: 600px) {
+            .collab-images { flex-direction: column; }
+            .collab-images img { width: 100%; }
+        }
+
         .posts { margin-top: 3rem; }
 
         .post-preview {
@@ -77,10 +98,15 @@
             <p style="margin-top: 1.5rem;">From songwriting collaboration to deep discussions about consciousness, art, and the future of human-machine partnership, "Conversations with Claude" captures Peter's fascination with how AI can expand creative possibilities while raising profound questions about what it means to create, to think, and to be human in an age of intelligent machines.</p>
         </div>
 
+        <div class="collab-images">
+            <img src="images/IMAGE%20OF%20PETER.png" alt="Peter Kleinhans">
+            <img src="images/CLAUDE.png" alt="Claude AI">
+        </div>
+
         <div class="posts">
             <article class="post-preview">
                 <a href="blog-post-anthropic.html">
-                    <img src="images/IMAGE%20OF%20PETER.png" alt="Peter Kleinhans" class="post-thumbnail">
+                    <img src="images/ABSTRACT%20TECH.png" alt="Abstract digital landscape" class="post-thumbnail">
                 </a>
                 <div class="post-text">
                     <h2><a href="blog-post-anthropic.html">The Most Toxic Policy Decision</a></h2>
